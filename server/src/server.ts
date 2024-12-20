@@ -1,8 +1,15 @@
 import express from 'express';
-import path from 'node:path';
+import path from 'path';
+//using 1 import bellow to satify render deployment error
+import { fileURLToPath } from 'url';
 
 import db from './config/connection.js';
 import routes from './routes/index.js';
+
+//using 2 lines bellow to satify render deployment error
+// Define __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 await db();
 
