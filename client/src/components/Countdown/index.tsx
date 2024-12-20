@@ -15,7 +15,7 @@ const Countdown: React.FC<CountdownProps> = ({ guesses, isCorrect, hasGuessed })
       {/* Toast Message */}
       {hasGuessed && (
         <div data-cy="toast">
-          {isCorrect ? <p style={{ color: '#006400' }}>Correct!!</p> : <p style={{ color: '#ff0000' }}>Incorrect!</p>}
+          {isCorrect ? <p style={{ color: '#006400' }}>Correct!!</p> : <p style={{ color: '#ff0000' }}>Incorrect!!!</p>}
         </div>
       )}
     </div>
